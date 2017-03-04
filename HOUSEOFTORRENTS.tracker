@@ -27,17 +27,17 @@
 	type="hot"
 	shortName="HOT"
 	longName="HOUSEOFTORRENTS"
-	siteName="http://houseoftorrents.me">
+	siteName="http://houseoftorrents.club">
 
 	<settings>
-		<description text="Go to https://houseoftorrents.me/rss.php?custom=1. Select Alternative under Log-in Type and hit the Get Link button. Paste the resulting URL."/>
+		<description text="Go to https://houseoftorrents.club/rss.php?custom=1. Select Alternative under Log-in Type and hit the Get Link button. Paste the resulting URL."/>
 		<passkey pasteRegex="(?:passkey=)([\da-zA-Z]{32})" tooltiptext="The passkey in your Alternative HOUSEOFTORRENTS RSS feed link."/>
 	</settings>
 
 	<servers>
 		<server
 			network="HOUSEOFTORRENTS"
-			serverNames="irc.houseoftorrents.me"
+			serverNames="irc.houseoftorrents.club"
 			channelNames="#announce"
 			announcerNames="HOT"
 			/>
@@ -46,7 +46,7 @@
 	<parseinfo>
 		<linepatterns>
 			<extract>
-				<!--New Torrent: [Minority.Report.S01E10.480p.x264-mSD] [Uploaded By: Anonymous] [Category: TV/X264] [Size: 236.57 MB] [URL: https://houseoftorrents.me/details.php?id=1321]-->
+				<!--New Torrent: [Minority.Report.S01E10.480p.x264-mSD] [Uploaded By: Anonymous] [Category: TV/X264] [Size: 236.57 MB] [URL: https://houseoftorrents.club/details.php?id=1321]-->
 				<regex value="New Torrent: \[(.*)\] \[Uploaded By: (.*)\] \[Category: (.*)\] \[Size: (.*)\] \[URL: (https?://.*/).*id=(\d+)\]"/>
 				<vars>
 					<var name="torrentName"/>
